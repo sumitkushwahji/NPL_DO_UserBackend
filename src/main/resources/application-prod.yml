@@ -1,0 +1,10 @@
+spring:
+  profiles: prod
+  jpa:
+    show-sql: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prodapp
+  # Add other production-specific settings
+
+upload:
+  dir: src/prod-files

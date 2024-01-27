@@ -1,0 +1,21 @@
+# application-dev.yml
+spring:
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    show-sql: true
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/npl_do_user_database
+    username: postgres
+    password: admin
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  http:
+    multipart:
+      max-request-size: 10MB
